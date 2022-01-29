@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    background-color: black;
+
+}
+
+.circle{
+  height:500px ;
+  width:500px;
+  border-radius: 50%;
+  background-color: aqua;
+  position: relative;
+  
+}
+.circle:after{
+  content: "";
+  position: absolute;
+  bottom:-10.5%;
+  height:250px ;
+  width:250px;
+  background-color: rgb(12, 12, 12);
+  z-index: 1;
+  left:25%;
+  transform: rotate(-45deg);
+  border-radius: 0% 0%  0% 100%;
+
+}
+.circle:before{
+  content: "";
+  position: absolute;
+  top:88.5%;
+  left:50%;
+  transform: translate(-50% , -50%);
+  z-index: -1;
+  border-left: 400px solid transparent; 
+  border-right: 400px solid transparent; 
+  border-bottom: 250px solid blue ;
+  
+
+}
+
